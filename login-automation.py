@@ -16,7 +16,6 @@ driver.find_element_by_css_selector('#primary > div > main > div > div > form > 
 
 password_input = driver.find_element_by_xpath('//*[@id="password"]')
 time.sleep(3)
-#password_input.send_keys(password)
 ActionChains(driver).move_to_element(password_input).send_keys(password).perform()
 time.sleep(3)
 
